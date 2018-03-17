@@ -14,5 +14,23 @@ def calc():
 		k = '*' 
 	
 	A = str(first) + k + str(last)
-	return(A)
-print(calc())
+	return A
+
+while  True : 
+	B = calc()
+	num = input(B+ '=')
+	if int(num) != eval(B) :
+		print('틀렸습니다.')
+	else :
+		print('정답입니다.')
+		
+	C = input('계속 진행하시겠습니까? Y/N')
+	if C == 'Y' :
+		continue
+	else :
+		print('감사합니다.')
+		break
+
+
+
+
